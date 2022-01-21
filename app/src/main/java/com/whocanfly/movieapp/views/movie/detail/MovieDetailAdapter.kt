@@ -1,4 +1,4 @@
-package com.whocanfly.movieapp.views.movie
+package com.whocanfly.movieapp.views.movie.detail
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

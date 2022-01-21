@@ -2,11 +2,11 @@
     <!-- Base application theme. -->
     <style name="Theme.MovieApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/denim_blue</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/denim_blue</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -21,5 +21,12 @@
         <item name="cornerSize">20dp</item>
         <item name="background">@android:color/transparent</item>
         <item name="backgroundColor">@android:color/transparent</item>
+    </style>
+    <style name="Theme.MovieApp.MySplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowSplashScreenBackground">@color/denim_blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_film_2</item>
+        <item name="postSplashScreenTheme">@style/Theme.MovieApp</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+
     </style>
 </resources>

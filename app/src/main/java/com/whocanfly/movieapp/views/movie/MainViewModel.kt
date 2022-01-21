@@ -1,4 +1,4 @@
-package com.whocanfly.movieapp.views
+package com.whocanfly.movieapp.views.movie
 
 import androidx.lifecycle.*
 import com.whocanfly.movieapp.api.Movie

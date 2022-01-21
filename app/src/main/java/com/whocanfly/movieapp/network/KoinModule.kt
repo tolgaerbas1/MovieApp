@@ -1,12 +1,10 @@
 package com.whocanfly.movieapp.network
 
 import android.content.Context
-import com.whocanfly.movieapp.views.MainViewModel
-import com.whocanfly.movieapp.views.movie.MovieDetailViewModel
+import com.whocanfly.movieapp.views.movie.MainViewModel
+import com.whocanfly.movieapp.views.movie.detail.MovieDetailViewModel
 import org.koin.android.ext.koin.androidApplication
-import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
-import org.koin.dsl.koinApplication
 import org.koin.dsl.module
 
 

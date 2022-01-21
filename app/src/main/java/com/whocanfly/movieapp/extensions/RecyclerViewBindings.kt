@@ -254,10 +254,10 @@ object RecyclerViewBindings {
         ) : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(item: Any?, index: Int) {
-//            binding.setVariable(BR.index, index)
+//                binding.setVariable(BR.index, index)
                 binding.setVariable(BR.item, item)
-                binding.setVariable(BR.listener, listener)
-//            binding.setVariable(BR.itemIdGetter, itemIdGetter)
+//                binding.setVariable(BR.listener, listener)
+//                binding.setVariable(BR.itemIdGetter, itemIdGetter)
 //                binding.setVariable(BR.lifecycleOwner, viewLifecycleOwner)
                 binding.lifecycleOwner = viewLifecycleOwner
                 if (fastBind) {

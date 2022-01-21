@@ -1,7 +1,6 @@
 package com.whocanfly.movieapp.api
 
 import androidx.lifecycle.MutableLiveData
-import com.whocanfly.movieapp.BuildConfig
 import com.whocanfly.movieapp.utils.Definitions
 import retrofit2.Response
 
@@ -35,15 +34,15 @@ class MovieRepo(private val movieAPI: MovieAPI) {
 
     suspend fun fetchAllMoviesFromApi() {
 
-        val upcomingMovResponse = getUpcoming()
-        if (upcomingMovResponse.isSuccessful) {
-            val list = upcomingMovResponse.body()?.searchResultsList
+        val upcomingMovieResponse = getUpcoming()
+        if (upcomingMovieResponse.isSuccessful) {
+            val list = upcomingMovieResponse.body()?.searchResultsList
             upcomingMovies.postValue(list)
         }
 
-        val popularMovRespone = getPopularMovies(1)
-        if (popularMovRespone.isSuccessful) {
-            val list = popularMovRespone.body()?.searchResultsList
+        val popularMovieResponse = getPopularMovies(1)
+        if (popularMovieResponse.isSuccessful) {
+            val list = popularMovieResponse.body()?.searchResultsList
             popularMovies.postValue(list)
         }
 

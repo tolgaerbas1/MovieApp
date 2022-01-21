@@ -6,7 +6,7 @@
     app:startDestination="@id/main_fragment">
     <fragment
         android:id="@+id/main_fragment"
-        android:name="com.whocanfly.movieapp.views.MainFragment"
+        android:name="com.whocanfly.movieapp.views.movie.MainFragment"
         android:label="main"
         tools:layout="@layout/main_fragment">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/movie_detail"
-        android:name="com.whocanfly.movieapp.views.movie.MovieDetailFragment"
+        android:name="com.whocanfly.movieapp.views.movie.detail.MovieDetailFragment"
         android:label="movieDetail"
         tools:layout="@layout/movie_detail_fragment">
         <argument

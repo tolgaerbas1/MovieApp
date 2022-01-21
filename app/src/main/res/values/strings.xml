@@ -7,7 +7,9 @@
     <string name="top_rated_movies">Top Rated Movies</string>
     <string name="popular_series">Popular Series</string>
     <string name="movie_title">Movie Title</string>
-    <string name="discover">Discover Upcoming Movies</string>
+    <string name="discover">Discover Movies</string>
     <string name="searchicon">SearchIcon</string>
+    <string name="trending">Trending</string>
     <string name="no_internet">No Network!! Please Turn on Internet</string>
+    <string name="search_movies">Search movie</string>
 </resources>

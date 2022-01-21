@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
@@ -15,15 +14,11 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.facebook.shimmer.ShimmerFrameLayout
-import com.whocanfly.movieapp.MainActivity
 import com.whocanfly.movieapp.R
 import com.whocanfly.movieapp.api.Movie
 import com.whocanfly.movieapp.databinding.CardMovieItemBinding
 import com.whocanfly.movieapp.databinding.CardMovieTopBinding
-import com.whocanfly.movieapp.extensions.safeNavigate
 import com.whocanfly.movieapp.utils.Definitions
-import com.whocanfly.movieapp.views.MainFragment
-import com.whocanfly.movieapp.views.MainFragmentDirections
 
 class SearchResultAdapter(
     private val isForCollection: Boolean,
@@ -62,11 +57,11 @@ class SearchResultAdapter(
             cardHolder.binding.shimmer.showShimmer(true)
             setImage(
                 cardHolder.binding.root.context, Definitions.IMAGE_URL_W500 + movie.posterPath,
-                cardHolder.binding.shimmer, cardHolder.binding.movieImg
+                cardHolder.binding.shimmer, cardHolder.binding.ivMovieImg
             )
 
             //Start details fragment to show about details of movie/series
-            cardHolder.binding.movieImg.setOnClickListener {
+            cardHolder.binding.ivMovieImg.setOnClickListener {
                 listener.startDetailsFragment(movie)
             }
         }
